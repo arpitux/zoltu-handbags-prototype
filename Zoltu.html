@@ -20,23 +20,28 @@
 	<link href="css/custom.css" rel="stylesheet">
 	<link href="css/helpers.css" rel="stylesheet">
 	<link href="css/BootstrapXL.css" rel="stylesheet">
+	<link href="fonts/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="fonts/flaticons/flaticon.css" rel="stylesheet" />
+	<link href="vendors/select2/select2.min.css" rel="stylesheet" />
 </head>
 <body>
 	<header id="header" class="clearfix" data-current-skin="blue">
 		<ul class="header-inner">
 
 			<li class="logo hidden-xs">
-				<a href="index.html">Zoltu</a>
+				<a href="index.html" class="fw700">Zoltu</a>
 			</li>
-
+			<li class="col-xs-7 col-sm-6 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-2">
+				<select class="select2 full-width" multiple="multiple">
+				  <option value="AL">#Alabama</option>
+				  <option value="WY">#Wyoming</option>
+				</select>
+			</li>
 			<li class="pull-right">
 				<ul class="top-menu">
-
 					<li id="top-search">
 						<a href=""><i class="tm-icon zmdi zmdi-search"></i></a>
 					</li>
-
-
 					<li class="dropdown">
 						<a data-toggle="dropdown" href="">
 							<i class="tm-icon zmdi zmdi-notifications"></i>
@@ -123,12 +128,12 @@
 						<a data-toggle="dropdown" href=""><i class="tm-icon zmdi zmdi-more-vert"></i></a>
 						<ul class="dropdown-menu dm-icon pull-right">
 							<li class="skin-switch hidden-xs">
-								<span class="ss-skin bgm-lightblue" data-skin="lightblue"></span>
-								<span class="ss-skin bgm-bluegray" data-skin="bluegray"></span>
+								<span class="ss-skin btn-default" data-skin="lightblue"></span>
+								<span class="ss-skin btn-defaultgray" data-skin="bluegray"></span>
 								<span class="ss-skin bgm-cyan" data-skin="cyan"></span>
 								<span class="ss-skin bgm-teal" data-skin="teal"></span>
 								<span class="ss-skin bgm-orange" data-skin="orange"></span>
-								<span class="ss-skin bgm-blue" data-skin="blue"></span>
+								<span class="ss-skin btn-default" data-skin="blue"></span>
 							</li>
 							<li class="divider hidden-xs"></li>
 							<li class="hidden-xs">
@@ -196,6 +201,7 @@
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
 						<div class="card product-card">
 							<div class="card-header">
+								
 								<img class="image" src="img/handbag.jpg" />
 								<ul class="actions">
 									<li>
@@ -223,7 +229,52 @@
 								</ul>
 							</div>
 							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-light"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$200</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#leather</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -257,7 +308,52 @@
 								</ul>
 							</div>
 							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-light"></i>
+									<i class="fa fa-star text-light"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$150</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#freeshipping</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -291,7 +387,211 @@
 								</ul>
 							</div>
 							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$1300</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#freeshipping</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
+							</div>		
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+						<div class="card product-card">
+							<div class="card-header">
+								<img class="image" src="img/handbag.jpg" />
+								<ul class="actions">
+									<li>
+										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
+											<i class="zmdi zmdi-favorite-outline"></i>
+										</a>
+									</li>
+									<li class="dropdown">
+										<a href="" data-toggle="dropdown">
+											<i class="zmdi zmdi-more-vert"></i>
+										</a>
+
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li>
+												<a href="">Option 1</a>
+											</li>
+											<li>
+												<a href="">Option 2</a>
+											</li>
+											<li>
+												<a href="">Option 3</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="card-body card-padding">
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-light"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$500</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#freeshipping</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+						<div class="card product-card">
+							<div class="card-header">
+								
+								<img class="image" src="img/handbag.jpg" />
+								<ul class="actions">
+									<li>
+										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
+											<i class="zmdi zmdi-favorite-outline"></i>
+										</a>
+									</li>
+									<li class="dropdown">
+										<a href="" data-toggle="dropdown">
+											<i class="zmdi zmdi-more-vert"></i>
+										</a>
+
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li>
+												<a href="">Option 1</a>
+											</li>
+											<li>
+												<a href="">Option 2</a>
+											</li>
+											<li>
+												<a href="">Option 3</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="card-body card-padding">
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-light"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$200</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#leather</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -325,7 +625,52 @@
 								</ul>
 							</div>
 							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-light"></i>
+									<i class="fa fa-star text-light"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$150</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#freeshipping</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -359,8 +704,53 @@
 								</ul>
 							</div>
 							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$1300</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#freeshipping</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
+							</div>		
 						</div>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
@@ -393,755 +783,52 @@
 								</ul>
 							</div>
 							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-						<div class="card product-card">
-							<div class="card-header">
-								<img class="image" src="img/handbag.jpg" />
-								<ul class="actions">
-									<li>
-										<a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Favorite">
-											<i class="zmdi zmdi-favorite-outline"></i>
-										</a>
-									</li>
-									<li class="dropdown">
-										<a href="" data-toggle="dropdown">
-											<i class="zmdi zmdi-more-vert"></i>
-										</a>
-
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a href="">Option 1</a>
-											</li>
-											<li>
-												<a href="">Option 2</a>
-											</li>
-											<li>
-												<a href="">Option 3</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body card-padding">
-								Cras leo sem, egestas a accumsan eget, euismod at nunc. Praesent vel mi blandit, tempus ex gravida.
+								<div>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-warning"></i>
+									<i class="fa fa-star text-light"></i>
+									&nbsp;(7 ratings)
+								</div>
+								<div class="fs26 text-black fw700">$500</div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active text-transform-none">#brown</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></i></button>
+                                </div>
+								<div class="btn-group btn-group-sm tag " role="group">
+                                    <button type="button" class="btn btn-default active">#freeshipping</button>
+                                    <button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+                                </div>
+								<div class="dropdown dropup inline-block">
+                                     <a href="#" class="dropdown-toggle btn btn-sm tag-more btn-default mt10" data-toggle="dropdown" aria-expanded="true">+2</a>
+                                    <ul class="dropdown-menu tags-popup">
+                                       <li>
+											<div class="btn-group btn-group-sm tag" role="group">
+												<button type="button" class="btn btn-default active">#freeshipping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdfsdfsdfsfd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#sdsd</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                        <li>
+											<div class="btn-group btn-group-sm tag " role="group">
+												<button type="button" class="btn btn-default active">#freeshisdgsfsdfpping</button>
+												<button type="button" class="btn btn-default "><i class="flaticon flaticon-sign"></i></button>
+											</div>
+										</li>
+                                    </ul>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -1245,7 +932,10 @@
 	<script src="js/charts.js"></script>
 	<script src="js/functions.js"></script>
 	<script src="js/demo.js"></script>
+	<script src="vendors/select2/select2.min.js"></script>
 
-
+	<script>
+		$(".select2").select2({ tags: true });
+	</script>
 </body>
 </html>

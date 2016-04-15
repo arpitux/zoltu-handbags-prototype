@@ -346,7 +346,12 @@
 .text-yellow {
     color: yellow !important;
 }
-
+.text-black {
+    color:black;
+}
+.text-light{
+    color:#dddddd;
+}
 .text-white {
     color:white;
 }
