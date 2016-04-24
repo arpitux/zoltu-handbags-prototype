@@ -118,7 +118,7 @@ content: '\f1c3' ;
 /**
  * Select2 - search 1
  */
-.search1{display:none;}
+
 .search1 .select2-container--default .select2-selection--single,
 .search1 .select2-container--default .select2-selection--multiple,
 .search1 .select2-container--default.select2-container--focus .select2-selection--multiple {
