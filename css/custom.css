@@ -1,4 +1,12 @@
-﻿.product-list > .col-xs-6,.product-list > .col-sm-4,.product-list > .col-md-3{
+﻿#header{
+    z-index:16;
+}
+#top-search-wrap{
+    min-height:70px;
+    height:initial !important;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.product-list > .col-xs-6,.product-list > .col-sm-4,.product-list > .col-md-3{
     padding-left:5px !important;padding-right:5px !important;
 }
 .product-list .product-card{
@@ -13,6 +21,10 @@
 .product-list .product-card .image{
     width:100%;
 }
+.product-list .product-card .product-details{
+    height:200px;
+    padding:0px 20px 20px 20px;
+}
 @media (max-width: 767px)
 {
     .container{
@@ -21,10 +33,17 @@
     }
 }
 .product-list .product-card .card-body .tag{
-    margin-top:10px;
+    margin-top:8px;
     margin-right:3px;
-    padding:2px 8px;
-    font-size:14px;
+    padding: 2px 5px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.12) !important;
+}
+.product-list .product-card .card-body .tag-more.btn-sm{
+   padding: 2px 5px;
+    font-size: 12px;
+    margin-top:8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.12) !important;
 }
 .product-list .product-card .card-body.card-body-padding
 {
@@ -34,10 +53,7 @@
 .product-list .product-card .card-body .tag.btn-group-sm .btn .flaticon::before{
     font-size:12px ;
 }
-.product-list .product-card .card-body  .tag-more.btn-sm{
-    padding:2px 8px;
-    font-size:14px;
-}
+
 .product-list .product-card .carousel .carousel-control.left{
     left: -20px !important;
 }
@@ -85,6 +101,12 @@
     font-size:11px;
     margin-left:0px;
 }
+.tooltip .tooltip-inner{
+    background-color:#111 !important;
+}
+.tooltip .tooltip-arrow{
+    border-top-color:#111 !important;
+}
 .btn{
     text-transform:none;
 }
@@ -118,7 +140,7 @@ content: '\f1c3' ;
 /**
  * Select2 - search 1
  */
-
+.search1{display:none;}
 .search1 .select2-container--default .select2-selection--single,
 .search1 .select2-container--default .select2-selection--multiple,
 .search1 .select2-container--default.select2-container--focus .select2-selection--multiple {
@@ -203,7 +225,7 @@ content: '\f1c3' ;
 .search2 .select2-container--default .select2-selection--multiple,
 .search2 .select2-container--default.select2-container--focus .select2-selection--multiple {
   background-color: #efefef !important;
-  height: 40px !important;
+  min-height: 40px !important;
   border: none !important;
   border:0px !important;
   color:white;
