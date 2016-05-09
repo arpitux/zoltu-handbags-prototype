@@ -133,18 +133,18 @@
 
 										<!-- Wrapper for slides -->
 										<div class="carousel-inner" role="listbox">
-											<div class="item active">
-												<img src="img/handbags/d1.jpeg" alt="">
-											</div>
-											<div class="item">
-												<img src="img/handbags/d2.jpeg" alt="">
-											</div>
-											<div class="item">
-												<img src="img/handbags/d3.jpeg" alt="">
-											</div>
-											<div class="item">
-												<img src="img/handbags/d4.jpeg" alt="">
-											</div>
+											<a data-toggle="modal" href="#modalWider" class="item active">
+												<img src="img/handbags/g1.jpeg" alt="" >
+											</a>
+											<a data-toggle="modal" href="#modalWider" class="item">
+												<img src="img/handbags/g2.jpeg" alt="">
+											</a>
+											<a data-toggle="modal" href="#modalWider" class="item">
+												<img src="img/handbags/g3.jpeg" alt="">
+											</a>
+											<a data-toggle="modal" href="#modalWider" class="item">
+												<img src="img/handbags/g4.jpeg" alt="">
+											</a>
 										</div>
 
 										<!-- Controls -->
@@ -647,6 +647,75 @@
 		</ul>
 	</footer>
 
+	 <!-- Modal Large -->	
+    <div class="modal fade product-popup" id="modalWider" tabindex="-1" role="dialog" aria-hidden="true"> 
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+					 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div class="row">
+						<div class="col-sm-12 col-md-5 col-lg-4">
+							<div id="product-gallery" class="carousel slide mb20" data-ride="carousel" data-interval="false">
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active thumb-image">
+										<img src="img/handbags/g1.jpeg" data-imagezoom="img/handbags/g1-zoom.jpeg" data-zoomviewsize="[360,360]" data-magnification="3" alt="">
+									</div>
+									<div class="item  thumb-image">
+										<img src="img/handbags/g2.jpeg" data-imagezoom="img/handbags/g2-zoom.jpeg" data-zoomviewsize="[360,360]" data-magnification="3" alt="">
+									</div>
+									<div class="item  thumb-image">
+										<img src="img/handbags/g3.jpeg" data-imagezoom="img/handbags/g3-zoom.jpeg" data-zoomviewsize="[360,360]" data-magnification="3" alt="">
+									</div>
+									<div class="item  thumb-image">
+										<img src="img/handbags/g4.jpeg" data-imagezoom="img/handbags/g4-zoom.jpeg" data-zoomviewsize="[360,360]" data-magnification="3" alt="">
+									</div>
+								</div>
+								<!-- Indicators -->
+								
+								<div class="thumbnail-container">
+									<a href="javascript:void(0)" onclick="ThumbnailScroll('left')" class="thumbnail-arrow"><i class="fa fa-angle-left text-primary"></i></a>
+									<div class="thumbnail-scroll">
+										<ol class="carousel-indicators">
+											<li data-target="#product-gallery" data-slide-to="0" class="active ">
+												<img src="img/handbags/g1.jpeg" alt="">
+											</li>
+											<li data-target="#product-gallery" data-slide-to="1">
+												<img src="img/handbags/g2.jpeg" alt="">
+											</li>
+											<li data-target="#product-gallery" data-slide-to="2">
+												<img src="img/handbags/g3.jpeg" alt="">
+											</li>
+											<li data-target="#product-gallery" data-slide-to="3">
+												<img src="img/handbags/g4.jpeg" alt="">
+											</li>
+										</ol>
+									</div>
+									<a href="javascript:void(0)" onclick="ThumbnailScroll('right')" class="thumbnail-arrow"><i class="fa fa-angle-right text-primary"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-7 col-lg-8">
+							<div class="fs30 fw700" style="color:black;">
+								$200
+							</div>
+							<div class="product-tags">
+								<button tag-id="1" type="button" class="btn btn-warning tag" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-container="body" data-delay='{"show":"700"}' data-original-title="<b>Color: Brown</b><br/><span style='font-size:10px'>Click to add in filter</span>">#abcd: abc</button>
+								<button tag-id="2" type="button" class="btn btn-primary tag" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-container="body" data-delay='{"show":"700"}' data-original-title="<b>Color: Brown</b><br/><span style='font-size:10px'>Click to add in filter</span>">#abcdef: abcdefgh</button>
+								<button tag-id="3" type="button" class="btn btn-success tag" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-container="body" data-delay='{"show":"700"}' data-original-title="<b>Color: Brown</b><br/><span style='font-size:10px'>Click to add in filter</span>">#abcdefghij: abcde</button>
+								<button tag-id="4" type="button" class="btn btn-info tag" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-container="body" data-delay='{"show":"700"}' data-original-title="<b>Color: Brown</b><br/><span style='font-size:10px'>Click to add in filter</span>">#abcde: abcdefgh</button>
+								<button tag-id="5" type="button" class="btn bgm-deeppurple tag" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-container="body" data-delay='{"show":"700"}' data-original-title="<b>Color: Brown</b><br/><span style='font-size:10px'>Click to add in filter</span>">#abcde:abcdedf</button>
+							</div>
+							<div class="mt70 text-center">
+							 <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-shopping-cart"></i> Buy it</button>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<!-- Page Loader -->
 	<div class="page-loader">
 		<div class="preloader pls-blue">
@@ -731,7 +800,7 @@
 	<script src="js/functions.js"></script>
 	<script src="js/demo.js"></script>
 	<script src="vendors/select2/select2.min.js"></script>
-
+	<script src="vendors/zoom-demo/imagezoom.js"></script>
 	<script>
 		var tags_data = [{ id: 1, text: "tag 1", cssclass: "tag-color1" },
 				   { id: 2, text: "tag 2", cssclass: "tag-color2" },
@@ -783,6 +852,7 @@
 			});
 		});
 		$(document).ready(function () {
+			
 			$(".product-list .product-card .card-body .tag").on("click", function () {
 				$(this).tooltip('hide');
 				$('#header').addClass('search-toggled');
@@ -799,6 +869,17 @@
 					$("#search-tag-cnt").text(0).hide();
 			});
 		});
+		function ThumbnailScroll(direction) {
+			if(direction =="left")
+			{
+				$(".product-popup .carousel .thumbnail-scroll").animate({ 'scrollLeft': $(".product-popup .carousel .thumbnail-scroll").scrollLeft() - 70 },300);
+			}
+			if(direction == "right")
+			{
+				console.dir($(this).scrollLeft() + 66);
+				$(".product-popup .carousel .thumbnail-scroll").animate({ 'scrollLeft': $(".product-popup .carousel .thumbnail-scroll").scrollLeft() + 70 },300);
+			}
+		}
 	</script>
 </body>
 </html>

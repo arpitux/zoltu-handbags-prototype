@@ -288,3 +288,94 @@ content: '\f1c3' ;
 .tag-color4{
     background-color:#2196f3 !important;
 }
+
+
+.product-popup .carousel .carousel-control.left{
+    left: -20px !important;
+}
+.product-popup .carousel .carousel-control.right{
+    right: -20px !important;
+}
+.product-popup .carousel .carousel-control .zmdi{
+    font-size:35px;
+}
+.product-popup .carousel .carousel-control.carousel-control.right
+{
+    background-image: none !important;
+}
+.product-popup .carousel .carousel-control.carousel-control.left
+{
+  background-image: none !important;
+}
+
+.product-popup .carousel .carousel-indicators{
+    padding:0px;
+    background:none !important;
+    white-space:nowrap;
+    position:relative !important;
+    left:initial;
+    right:initial;
+    bottom:initial;
+    top:initial;
+}
+.product-popup .carousel .carousel-indicators li{
+    width:60px !important;
+    display:inline-flex;
+    margin:0px 3px 0px 3px;
+    border:1px solid #ddd;
+    padding:3px;
+    height:58px;
+    margin-top:1px; 
+    overflow:hidden;
+}
+.product-popup .carousel .carousel-indicators li.active{
+    width:60px !important;
+    height: 58px !important;
+    background-color:white;
+    border:1px solid #999;
+}
+.product-popup .carousel .thumbnail-container{
+    margin-top:10px;
+    height:60px;
+    overflow:hidden;
+}
+.product-popup .carousel .thumbnail-scroll{
+    overflow-x:auto; width:calc(100% - 50px);float:left;
+}
+.product-popup .carousel .thumbnail-arrow{
+    font-size:16px;width:25px;height:60px;display:inline-block;float:left;background-color:#eee;line-height:58px;text-align:center;
+}
+
+.product-popup .carousel .carousel-indicators li img{
+    height:100%;
+    margin:0px auto;
+}
+.product-popup .carousel-inner > .item > img{
+    margin:0px auto;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    max-height:100%;
+}
+.product-popup .carousel-inner > .item{
+    height:300px;
+    text-align:center;
+}
+.product-popup .carousel-inner > .item > img:hover{
+}
+.product-popup .product-tags .tag{
+   margin-top: 8px;
+    margin-right: 3px;
+    padding: 3px 8px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.12) !important;
+}
+.product-popup .modal-body{
+    padding:20px 25px 20px 25px;
+}
+.product-popup .modal-body .close{
+    font-size:25px;
+    padding:5px 10px;
+}
