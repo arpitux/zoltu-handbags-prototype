@@ -38,7 +38,8 @@
         }
 
         var posX = e.pageX,posY = e.pageY,zoomViewPositionX;
-        $('body').prepend('<div class="imagezoom-cursor">&nbsp;</div><div class="imagezoom-view"><img src="'+imageSrc+'"></div>');
+        $('body').prepend('<div class="imagezoom-cursor">&nbsp;</div>');
+        $('#product-popup-right-column').prepend('<div class="imagezoom-view"><img src="' + imageSrc + '"></div>');
 
         if(settings.zoomviewposition == 'right'){
           zoomViewPositionX = (offset.left+imageWidth+settings.zoomviewmargin);
@@ -48,8 +49,8 @@
 
         $(imagezoomView.selector).css({
           'position':'absolute',
-          'left': zoomViewPositionX,
-          'top': offset.top,
+          'left': -1, //zoomViewPositionX
+          'top': 0, //offset.top
           'width': cursorSize[0]*settings.magnification,
           'height': cursorSize[1]*settings.magnification,
           'background':'#fff',
