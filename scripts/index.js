@@ -1,75 +1,74 @@
-﻿Handlebars.registerHelper("colorTag", function (index) {
-    switch (index) {
-        case 0:
-            return "bgm-red";
-        case 1:
-            return "bgm-blue";
-        case 2:
-            return "bgm-bluegray";
-        case 3:
-            return "bgm-lightgreen";
-        case 4:
-            return "bgm-cyan";
-        case 5:
-            return "bgm-teal";
-        case 6:
-            return "bgm-lightblue";
-        case 7:
-            return "bgm-orange";
-        case 8:
-            return "bgm-purple";
-        case 9:
-            return "bgm-deeporange";
-        case 10:
-            return "bgm-pink";
-        case 11:
-            return "bgm-amber";
-        case 12:
-            return "bgm-gray";
-        case 13:
-            return "bgm-indigo";
-        case 14:
-            return "bgm-lime";
-        case 15:
-            return "bgm-green";
-        case 16:
-            return "bgm-deeppurple";
-        
-    }
+﻿Handlebars.registerHelper("colorTag", function (categoryid) {
+    var color = '';
+    $.each(categories, function (index, category) {
+        if (category.id == categoryid) {
+            color = category.color;
+            return;
+        }
+    });
+    return color;
 });
-var tagsData = [];
+var category_colors = ["bgm-red", "bgm-blue", "bgm-bluegray", "bgm-lightgreen", "bgm-cyan", "bgm-teal", "bgm-lightblue",
+    "bgm-orange", "bgm-purple", "bgm-deeporange", "bgm-pink", "bgm-amber", "bgm-gray", "bgm-indigo", "bgm-lime", "bgm-green", "bgm-deeppurple"];
+
+var categories = [];
 $.ajax({
-    url: 'https://zoltu-bags-middleware.azurewebsites.net/api/tags',
+    url: 'https://zoltu-bags-middleware.azurewebsites.net/api/tag_categories',
     type: 'GET',
     dataType: 'JSON',
-    success: function (tags) {
-        tagsData = $.map(tags, function (obj) {
-            obj.id = obj.id;
-            obj.text = "#" + obj.category.name + ": " + obj.name;
-            return obj;
+    success: function (cats) {
+        console.dir(cats);
+        //assign each category a color
+        $.each(cats, function (index, cat) {
+            var category = cat;
+            category.color = category_colors[index];
+            categories.push(category);
         });
 
-        //Load all tags in the search
-        loadTags();
-        
-        $("#main-search").on("change", function (e) {
-            if ($("#main-search").val())
-                $("#search-tag-cnt").text($("#main-search").val().length).show();
-            else
-                $("#search-tag-cnt").text(0).hide();
-
-            GetProducts();
-        });
-        $("#main-search").on("select2:unselect", function (e) {
-            $("#main-search option[value='" + e.params.data.id + "'").prop('selected', false);
-            $("#main-search").trigger("change");
-        });
-
+        getTags();
+        GetProducts();
     },
     error: function () {
-        alert('error in fetching tags');
+        alert('error in fetching categories');
     }
 });
+
+var tagsData = [];
+function getTags() {
+    $.ajax({
+        url: 'https://zoltu-bags-middleware.azurewebsites.net/api/tags',
+        type: 'GET',
+        dataType: 'JSON',
+        success: function (tags) {
+            console.dir(tags);
+            tagsData = $.map(tags, function (obj, index) {
+                obj.id = obj.id;
+                obj.text = "#" + obj.category.name + ": " + obj.name;
+                return obj;
+            });
+
+            //Load all tags in the search
+            loadTags();
+
+            $("#main-search").on("change", function (e) {
+                if ($("#main-search").val())
+                    $("#search-tag-cnt").text($("#main-search").val().length).show();
+                else
+                    $("#search-tag-cnt").text(0).hide();
+
+                GetProducts();
+            });
+            $("#main-search").on("select2:unselect", function (e) {
+                $("#main-search option[value='" + e.params.data.id + "'").prop('selected', false);
+                $("#main-search").trigger("change");
+            });
+
+        },
+        error: function () {
+            alert('error in fetching tags');
+        }
+    });
+}
 
 function loadTags() {
     $("#main-search").select2({
@@ -91,6 +90,9 @@ function loadTags() {
                 return null;
             }
         },
+    });
+    $("#main-search").on("select2:selecting", function (event) {
+        console.dir(event.params.args.data);
     });
 }
 
@@ -142,8 +144,6 @@ var visibleTagCnt = 5;
 var sliderInterval;
 var sliderRunning = false;
 var overSlider = false;
-GetProducts();
-
 
 
 function GetProducts() {
@@ -206,17 +206,41 @@ function GetProducts() {
     });
 }
 function ShowProductPopup(productid) {
-    $("#product-popup .modal-body").empty();
-    $("#product-popup").modal("show");
-    $.ajax({
-        url: 'https://zoltu-bags-middleware.azurewebsites.net/api/products/' + productid,
-        success: function (product) {
-            console.dir(product);
-            var template = Handlebars.templates['product-details'];
-            $("#product-popup .modal-body").html(template(product));
-        },
-        error: function () {
-            alert('error fetching product')
-        }
+    $("body").css("margin-right:17px;overflow:hidden");
+    $("#product-popup-loader").fadeIn("fast",function () {
+        $.ajax({
+            url: 'https://zoltu-bags-middleware.azurewebsites.net/api/products/' + productid,
+            success: function (product) {
+                console.dir(product);
+                var template = Handlebars.templates['product-details'];
+                $.magnificPopup.open({
+                    closeBtnInside: true,
+                    closeOnContentClick: false,
+                    items: {
+                        src: template(product),
+                        type: 'inline'
+                    },
+                    callbacks: {
+                        beforeOpen: function () {
+                            $("#product-popup-loader").hide();
+                            this.st.mainClass = "mfp-zoom-in";
+                            $("body").css("margin-right overflow:hidden");
+                        },
+                        open: function () {
+                            //Click event on Tags
+                            $(".product-popup .product-tags .tag").on("click", function () {
+                                $(this).tooltip('hide');
+                                $('#header').addClass('search-toggled');
+                                $("#main-search option[value=" + $(this).attr('tag-id') + "]").prop('selected', true);
+                                $("#main-search").trigger("change");
+                            });
+                        }
+                    }
+                });
+            },
+            error: function () {
+                alert('error fetching product')
+            }
+        });
     });
 }
