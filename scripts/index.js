@@ -1,4 +1,7 @@
 ﻿Handlebars.registerHelper("colorTag", function (categoryid) {
+    return fnColorTag(categoryid);
+});
+function fnColorTag(categoryid) {
     var color = '';
     $.each(categories, function (index, category) {
         if (category.id == categoryid) {
@@ -7,9 +10,9 @@
         }
     });
     return color;
-});
-var category_colors = ["bgm-red", "bgm-blue", "bgm-bluegray", "bgm-lightgreen", "bgm-cyan", "bgm-teal", "bgm-lightblue",
-    "bgm-orange", "bgm-purple", "bgm-deeporange", "bgm-pink", "bgm-amber", "bgm-gray", "bgm-indigo", "bgm-lime", "bgm-green", "bgm-deeppurple"];
+}
+var category_colors = ["bgm-red", "bgm-blue", "bgm-green", "bgm-lightgreen", "bgm-cyan", "bgm-pink", "bgm-lightblue",
+    "bgm-orange", "bgm-purple", "bgm-deeporange", "bgm-teal", "bgm-amber", "bgm-gray", "bgm-indigo", "bgm-lime", "bgm-bluegray", "bgm-deeppurple"];
 
 var categories = [];
 $.ajax({
@@ -75,6 +78,10 @@ function loadTags() {
         placeholder: "Start typing..",
         data: tagsData,
         allowClear: true,
+        templateSelection: function (data,a) {
+            a.addClass(fnColorTag(data.category_id));
+            return data.text;
+        },
         matcher: function (term, option) {
             if (typeof term.term != 'undefined') { //has terms
                 if (/\S/.test(term.term)) { //if empty or spaces
@@ -215,6 +222,7 @@ function ShowProductPopup(productid) {
                 var template = Handlebars.templates['product-details'];
                 $.magnificPopup.open({
                     closeBtnInside: true,
+                    removalDelay: 500,
                     closeOnContentClick: false,
                     items: {
                         src: template(product),
