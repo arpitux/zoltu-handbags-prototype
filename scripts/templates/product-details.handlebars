@@ -4,28 +4,28 @@
 			<div id="product-gallery" class="carousel slide mb20" data-ride="carousel" data-interval="false">
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
-					{{#each image_urls}}
+					{{#each images}}
 					<div class="item {{#ifCond @index '==' 0}}active{{/ifCond}} thumb-image">
-						<img src="{{this}}" data-imagezoom="{{this}}" data-zoomviewsize="[360,360]" data-magnification="3" alt="">
+						<img src="{{large}}" data-imagezoom="{{large}}" data-zoomviewsize="[360,360]" data-magnification="3" alt="">
 					</div>
 					{{/each}}
 				</div>
 				<!-- Indicators -->
 
 				<div class="thumbnail-container">
-					{{#isLengthOf image_urls ">" 3}}
+					{{#isLengthOf images ">" 3}}
 						<a href="javascript:void(0)" onclick="ThumbnailScroll('left')" class="thumbnail-arrow"><i class="fa fa-angle-left text-primary"></i></a>
 					{{/isLengthOf}}
 					<div class="thumbnail-scroll">
 						<ol class="carousel-indicators">
-							{{#each image_urls}}
+							{{#each images}}
 							<li data-target="#product-gallery" data-slide-to="{{@index}}" class="{{#ifCond @index '==' 0}}active{{/ifCond}} ">
-								<img src="{{this}}" alt="">
+								<img src="{{small}}" alt="">
 							</li>
 							{{/each}}
 						</ol>
 					</div>
-					{{#isLengthOf image_urls ">" 3}}
+					{{#isLengthOf images ">" 3}}
 						<a href="javascript:void(0)" onclick="ThumbnailScroll('right')" class="thumbnail-arrow"><i class="fa fa-angle-right text-primary"></i></a>
 					{{/isLengthOf}}
 				</div>
