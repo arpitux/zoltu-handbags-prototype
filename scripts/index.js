@@ -1,6 +1,7 @@
 ﻿var g_api = 'https://bags-api.zoltu.com';
 var g_page_count = 24;
 var newFilterApplied = true;
+var currentRequest = null;
 
 Handlebars.registerHelper("colorTag", function (categoryid) {
     return fnColorTag(categoryid);
@@ -58,6 +59,7 @@ function getTags() {
             loadTags();
 
             $("#main-search").on("change", function (e) {
+                console.log("main-search-change");
                 if ($("#main-search").val())
                     $("#search-tag-cnt").text($("#main-search").val().length).show();
                 else
@@ -190,11 +192,18 @@ function GetProducts() {
         api += "&" + tagids.join("&");
     }
 
-    //Call api to get products
-    $.ajax({
+    //Call api to get products;
+    console.log("g_result_from_product_id - " + g_result_from_product_id);
+    console.log(api);
+    currentRequest = $.ajax({
         url: api,
         type: 'GET',
         dataType: 'JSON',
+        beforeSend: function () {
+            if (currentRequest != null) {
+                currentRequest.abort();
+            }
+        },
         success: function (data) {
             console.dir(data);
 
@@ -254,11 +263,9 @@ function GetProducts() {
                 overSlider = true;
                 clearInterval(sliderInterval);
                 sliderRunning = false;
-                console.log("overSlider - " + overSlider);
             });
             $(".carousel-control").on("mouseleave", function () {
                 overSlider = false;
-                console.log("overSlider - " + overSlider);
             });
             if ($('[data-toggle="tooltip"]')[0]) {
                 $('[data-toggle="tooltip"]').tooltip();
